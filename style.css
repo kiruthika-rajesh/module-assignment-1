@@ -1,0 +1,135 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+overflow-x:hidden;
+background:linear-gradient(-45deg,
+#00c6ff,
+#0072ff,
+#ff6b6b,
+#feca57);
+
+background-size:400% 400%;
+
+animation:bg 12s ease infinite;
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+.navbar{
+background:rgba(0,0,0,.6);
+backdrop-filter:blur(10px);
+}
+
+.hero-img{
+height:100vh;
+object-fit:cover;
+filter:brightness(60%);
+}
+
+.carousel-caption{
+bottom:30%;
+}
+
+.carousel-caption h1{
+font-size:4rem;
+font-weight:bold;
+}
+
+.feature-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+transition:.4s;
+height:100%;
+}
+
+.feature-card:hover{
+transform:translateY(-10px);
+}
+
+.destination-card{
+transition:.4s;
+}
+
+.destination-card:hover{
+transform:scale(1.05);
+}
+
+.destination-card img{
+height:250px;
+object-fit:cover;
+}
+
+.contact-form{
+max-width:600px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.carousel-caption h1{
+font-size:2rem;
+}
+
+.hero-img{
+height:80vh;
+}
+
+}
+
+/* Tablet */
+
+@media(min-width:769px)
+and (max-width:1024px){
+
+.carousel-caption h1{
+font-size:3rem;
+}
+
+}
+
+/* Desktop */
+
+@media(min-width:1025px){
+
+.carousel-caption h1{
+font-size:4rem;
+}
+
+}
+.destination-card .btn{
+    width:100%;
+    border-radius:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.destination-card .btn:hover{
+    transform:scale(1.05);
+}
